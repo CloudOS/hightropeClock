@@ -58,6 +58,10 @@ Partial Class Form1
         Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer10 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.worldClockTab.SuspendLayout()
         Me.newTimerTab.SuspendLayout()
@@ -122,6 +126,10 @@ Partial Class Form1
         'newTimerTab
         '
         Me.newTimerTab.BackColor = System.Drawing.SystemColors.Control
+        Me.newTimerTab.Controls.Add(Me.Label7)
+        Me.newTimerTab.Controls.Add(Me.Label6)
+        Me.newTimerTab.Controls.Add(Me.Label5)
+        Me.newTimerTab.Controls.Add(Me.Label4)
         Me.newTimerTab.Controls.Add(Me.Button8)
         Me.newTimerTab.Controls.Add(Me.Button9)
         Me.newTimerTab.Controls.Add(Me.Button10)
@@ -217,10 +225,12 @@ Partial Class Form1
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(192, 49)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(86, 30)
         Me.Button4.TabIndex = 4
+        Me.Button4.Text = "00"
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
@@ -229,10 +239,12 @@ Partial Class Form1
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(107, 49)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(86, 30)
         Me.Button3.TabIndex = 3
+        Me.Button3.Text = "00"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -241,10 +253,12 @@ Partial Class Form1
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(22, 49)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(86, 30)
         Me.Button2.TabIndex = 2
+        Me.Button2.Text = "0"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
@@ -254,7 +268,7 @@ Partial Class Form1
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(237, 255)
+        Me.Button1.Location = New System.Drawing.Point(259, 174)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(16, 16)
         Me.Button1.TabIndex = 1
@@ -265,9 +279,9 @@ Partial Class Form1
         Me.RichTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Font = New System.Drawing.Font("Open Sans Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(22, 251)
+        Me.RichTextBox1.Location = New System.Drawing.Point(22, 170)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(237, 25)
+        Me.RichTextBox1.Size = New System.Drawing.Size(256, 25)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
         '
@@ -341,6 +355,46 @@ Partial Class Form1
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "About"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(45, 111)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(40, 17)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "hours"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(121, 111)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(53, 17)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "minutes"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(208, 111)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(54, 17)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "seconds"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(19, 150)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 17)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Timer name"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -353,6 +407,7 @@ Partial Class Form1
         Me.worldClockTab.ResumeLayout(False)
         Me.worldClockTab.PerformLayout()
         Me.newTimerTab.ResumeLayout(False)
+        Me.newTimerTab.PerformLayout()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         Me.ResumeLayout(False)
@@ -393,4 +448,8 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Button11 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
 End Class
