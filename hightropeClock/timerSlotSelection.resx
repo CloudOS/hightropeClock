@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value> - Down arrow icon made by https://www.flaticon.com/authors/smashicons from www.flaticon.com
- - Check free icon made by https://www.flaticon.com/authors/petr-had from www.flaticon.com
- - Cancel free icon made by https://www.flaticon.com/authors/petr-had from www.flaticon.com
- - Alarm clock free icon made by https://www.flaticon.com/authors/dario-ferrando from www.flaticon.com
- - Left arrow free icon made by https://www.flaticon.com/authors/lucy-g from www.flaticon.com
- - Play button free icon made by https://www.flaticon.com/authors/lyolya from www.flaticon.com
- - Pause free icon made by https://www.flaticon.com/authors/chris-veigt from www.flaticon.com</value>
-  </data>
 </root>

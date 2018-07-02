@@ -22,6 +22,7 @@ Partial Class credits
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(credits))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
@@ -33,8 +34,7 @@ Partial Class credits
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(488, 223)
         Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = " - Down arrow icon made by https://www.flaticon.com/authors/smashicons from www.f" &
-    "laticon.com"
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         Me.RichTextBox1.WordWrap = False
         '
         'credits
